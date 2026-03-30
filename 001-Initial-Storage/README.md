@@ -1,9 +1,9 @@
 # Video 001 - Initial Storage Account
 
 En este video:
-- Terraform basics
-- Azure Storage Account
-- Hardcoded configuration
+- Terraform basics: Providers y el resource group como elemento organizador.
+- Azure Storage Account: simple, en costo y en estructura, ideal para comenzar desde cero
+- Hardcoded configuration: dejar la configuracion simple.
 
 Commandos utilizados:
 terraform init
