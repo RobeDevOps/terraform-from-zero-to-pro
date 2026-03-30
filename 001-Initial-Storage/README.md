@@ -1,11 +1,14 @@
 # Video 001 - Initial Storage Account
 
-In this video:
+En este video:
 - Terraform basics
 - Azure Storage Account
 - Hardcoded configuration
 
-Command used:
+Commandos utilizados:
 terraform init
 terraform plan
-terraform apply
+terraform apply -auto-approve
+
+# Recuerda limpiar tu environment
+terraform destroy -auto-approve

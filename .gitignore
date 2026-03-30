@@ -1,0 +1,7 @@
+# Terraform core files
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+
+# Ignore lock file (OPTIONAL: keep if working in team)
+**/.terraform.lock.hcl
