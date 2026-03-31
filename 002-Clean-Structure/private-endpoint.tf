@@ -1,0 +1,1 @@
+## Todos los private endpoints que se van a usar en el proyecto, se definen aquí.
