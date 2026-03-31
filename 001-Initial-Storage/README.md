@@ -6,9 +6,13 @@ En este video:
 - Hardcoded configuration: dejar la configuracion simple.
 
 Commandos utilizados:
+```
 terraform init
 terraform plan
 terraform apply -auto-approve
+```
 
 # Recuerda limpiar tu environment
+```
 terraform destroy -auto-approve
+```
