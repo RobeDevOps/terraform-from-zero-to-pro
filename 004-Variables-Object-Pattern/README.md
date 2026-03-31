@@ -2,7 +2,8 @@
 
 ## 📌 Descripción del Episodio
 
-En este episodio aprenderás cómo utilizar el **Object Pattern en variables de Terraform**, una técnica clave para escribir código más limpio, escalable y profesional.
+En este episodio aprenderás cómo utilizar el **Object Pattern en variables de Terraform**, u
+una técnica clave para escribir código más limpio, escalable y profesional.
 
 En lugar de manejar múltiples variables individuales, agrupamos configuraciones relacionadas dentro de un solo objeto, lo que permite:
 
