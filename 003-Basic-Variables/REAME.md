@@ -8,10 +8,11 @@ En este episodio de la serie, aprenderás a trabajar con **variables en Terrafor
 
 - Entender qué son las variables en Terraform
 - Definir variables usando `variables.tf`
-- Asignar valores usando:
-  - `terraform.tfvars`
-  - CLI (`-var`)
 - Usar variables dentro de recursos
+- Asignar valores usando:
+  - CLI (`-var`)
+  - `terraform.tfvars`
+  - `terraform.auto.tfvars` Carga las variables de forma automatica que se definen en ese directorio
 - Mejores prácticas básicas
 
 ---
@@ -32,6 +33,7 @@ Las variables te permiten:
 003-Basic-Variables/
 │
 ├── main.tf
+├── providers.tf
 ├── variables.tf
 ├── terraform.tfvars
 └── outputs.tf
@@ -59,3 +61,30 @@ variable "storage_account_name" {
   description = "Nombre del Storage Account"
   type        = string
 }
+```
+
+Commandos utilizados:
+```
+terraform init
+
+# Tienes que proveer el nombre de resource group name y el storage account name"
+terraform plan 
+
+# En la misma linea proveer los valors en el CLI
+terraform plan \
+-var="resource_group_name=rf003-rg" -var="storage_account_name=003storageaccount"
+
+# Proveer las variables por fichero. Depende del environment
+terraform plan -var-file=envs/dev.tfvars 
+terraform plan -var-file=envs/qa.tfvars 
+terraform plan -var-file=envs/prod.tfvars 
+
+# Usando .auto.tfvars, las variables se cargan de forma automatica.
+terraform plan 
+
+# Debes proveer las variables de cualquier forma que te guste.
+terraform apply -auto-approve
+
+# Solo destruye la infraestructura
+terraform destroy -auto-approve
+```
